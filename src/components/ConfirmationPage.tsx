@@ -17,10 +17,10 @@ const ConfirmationPage = () => {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3">
               <img
-    src="/assets/outlook-logo.svg"
-    alt="Outlook Logo"
-    className="w-6 h-6 object-contain"
-  />
+  src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Microsoft_Office_Outlook_%282018–present%29.svg"
+  alt="Outlook Logo"
+  className="w-6 h-6 object-contain"
+/>
               <div className="text-xl font-semibold text-teams-gray-800">Microsoft Outlook</div>
             </div>
             <nav className="hidden md:flex space-x-8">
