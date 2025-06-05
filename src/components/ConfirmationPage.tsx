@@ -16,11 +16,7 @@ const ConfirmationPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3">
-<img
-    src="/assets/outlook-logo.png"
-    alt="Outlook Logo"
-    className="w-6 h-6 object-contain"
-  />
+
               <div className="text-xl font-semibold text-teams-gray-800">Microsoft Outlook</div>
             </div>
             <nav className="hidden md:flex space-x-8">
@@ -59,7 +55,14 @@ const ConfirmationPage = () => {
     className="w-6 h-6 object-contain"
   />
 </div>
-                
+                 {/* Hero Section avec animation */}
+          <div className={`text-center mb-20 transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+            <div className="relative inline-block mb-8">
+              <div className="absolute inset-0 bg-teams-blue/20 rounded-full blur-2xl animate-pulse"></div>
+              <div className="relative bg-gradient-to-br from-teams-blue to-teams-blue-dark p-6 rounded-full shadow-2xl">
+                <CheckCircle className="w-16 h-16 text-white" />
+              </div>
+            </div>
                 <h2 className="text-3xl font-semibold text-teams-gray-800 mb-6">
                   Votre demande de réinitialisation de mot de passe a bien été prise en compte
                 </h2>
