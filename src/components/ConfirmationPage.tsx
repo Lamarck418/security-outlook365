@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { CheckCircle, Mail, ChevronRight } from 'lucide-react';
 
@@ -16,7 +15,6 @@ const ConfirmationPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3">
-
               <div className="text-xl font-semibold text-teams-gray-800">Microsoft Outlook</div>
             </div>
             <nav className="hidden md:flex space-x-8">
@@ -27,12 +25,12 @@ const ConfirmationPage = () => {
             </nav>
             <div className="flex items-center space-x-4">
               <button className="text-teams-gray-600 hover:text-teams-blue text-sm font-medium">Se connecter</button>
-<a
-  href="https://outlook.office.com/mail/"
-  className="bg-teams-blue text-white px-6 py-2 rounded-sm text-sm font-medium hover:bg-teams-blue-dark transition-colors"
->
-  Obtenir Outlook
-</a>
+              <a
+                href="https://outlook.office.com/mail/"
+                className="bg-teams-blue text-white px-6 py-2 rounded-sm text-sm font-medium hover:bg-teams-blue-dark transition-colors"
+              >
+                Obtenir Outlook
+              </a>
             </div>
           </div>
         </div>
@@ -41,54 +39,53 @@ const ConfirmationPage = () => {
       {/* Main Content */}
       <main className="flex-1 relative">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          
-          
 
           {/* Section CTA principale */}
           <div className={`transform transition-all duration-1000 delay-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
             <div className="bg-gradient-to-br from-teams-blue/10 to-teams-purple/10 backdrop-blur-sm rounded-xl p-16 text-center border border-teams-blue/20 max-w-4xl mx-auto">
               <div className="max-w-3xl mx-auto">
                 <div className="inline-flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-br from-teams-blue to-teams-blue-dark rounded-full mb-8 shadow-2xl">
-<img
-    src="/assets/outlook-logo.png"
-    alt="Outlook Logo"
-    className="w-6 h-6 object-contain"
-  />
-</div>
-                 {/* Hero Section avec animation */}
-          <div className={`text-center mb-20 transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-            <div className="relative inline-block mb-8">
-              <div className="absolute inset-0 bg-teams-blue/20 rounded-full blur-2xl animate-pulse"></div>
-              <div className="relative bg-gradient-to-br from-teams-blue to-teams-blue-dark p-6 rounded-full shadow-2xl">
-                <CheckCircle className="w-16 h-16 text-white" />
-              </div>
-            </div>
-                <h2 className="text-3xl font-semibold text-teams-gray-800 mb-6">
-                  Votre demande de réinitialisation de mot de passe a bien été prise en compte
-                </h2>
-                <p className="text-lg text-teams-gray-600 mb-8 leading-relaxed">
-                  Pour des raisons de sécurité, votre mot de passe actuel restera actif pendant 24 heures.
-Vous recevrez un e-mail de confirmation une fois la modification validée.
-                </p>
-                
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <a
-  href="https://outlook.office.com/mail/"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="group bg-teams-blue text-white px-8 py-4 rounded-sm text-lg font-medium hover:bg-teams-blue-dark transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
->
-  <span>Accéder à Outlook</span>
-  <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-</a>
-<a
-  href="https://outlook.office.com/mail/"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="bg-white text-teams-blue border-2 border-teams-blue px-8 py-4 rounded-sm text-lg font-medium hover:bg-teams-blue hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center"
->
-  Centre de sécurité
-</a>
+                  <img
+                    src="/assets/outlook-logo.png"
+                    alt="Outlook Logo"
+                    className="w-6 h-6 object-contain"
+                  />
+                </div>
+                {/* Hero Section avec animation */}
+                <div className={`text-center mb-20 transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+                  <div className="relative inline-block mb-8">
+                    <div className="absolute inset-0 bg-teams-blue/20 rounded-full blur-2xl animate-pulse"></div>
+                    <div className="relative bg-gradient-to-br from-teams-blue to-teams-blue-dark p-6 rounded-full shadow-2xl">
+                      <CheckCircle className="w-16 h-16 text-white" />
+                    </div>
+                  </div>
+                  <h2 className="text-3xl font-semibold text-teams-gray-800 mb-6">
+                    Votre demande de réinitialisation de mot de passe a bien été prise en compte
+                  </h2>
+                  <p className="text-lg text-teams-gray-600 mb-8 leading-relaxed">
+                    Pour des raisons de sécurité, votre mot de passe actuel restera actif pendant 24 heures.
+                    Vous recevrez un e-mail de confirmation une fois la modification validée.
+                  </p>
+
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a
+                      href="https://outlook.office.com/mail/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group bg-teams-blue text-white px-8 py-4 rounded-sm text-lg font-medium hover:bg-teams-blue-dark transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
+                    >
+                      <span>Accéder à Outlook</span>
+                      <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                    </a>
+                    <a
+                      href="https://outlook.office.com/mail/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-white text-teams-blue border-2 border-teams-blue px-8 py-4 rounded-sm text-lg font-medium hover:bg-teams-blue hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl"
+                    >
+                      Centre de sécurité
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
