@@ -53,10 +53,10 @@ const ConfirmationPage = () => {
             <div className="bg-gradient-to-br from-teams-blue/10 to-teams-purple/10 backdrop-blur-sm rounded-xl p-16 text-center border border-teams-blue/20 max-w-4xl mx-auto">
               <div className="max-w-3xl mx-auto">
                 <div className="inline-flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-br from-teams-blue to-teams-blue-dark rounded-full mb-8 shadow-2xl">
-  <img
+<img
     src="/assets/outlook-logo.png"
     alt="Outlook Logo"
-    className="w-12 h-12 sm:w-16 sm:h-16 object-contain"
+    className="w-6 h-6 object-contain"
   />
 </div>
                 
