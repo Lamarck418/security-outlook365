@@ -17,7 +17,7 @@ const ConfirmationPage = () => {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3">
 <img
-    src="/assets/outlook-logo.svg"
+    src="/assets/outlook-logo.png"
     alt="Outlook Logo"
     className="w-6 h-6 object-contain"
   />
